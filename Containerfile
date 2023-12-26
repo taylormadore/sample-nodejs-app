@@ -1,12 +1,11 @@
-FROM node:18
+FROM docker.io/node:20
 
+COPY . /src
 WORKDIR /src
 
-COPY . .
-
-RUN npm install --verbose
+RUN yarn install
 
 EXPOSE 9000
 
-CMD ["node", "index.js"]
+CMD ["yarn", "run", "start"]
 
