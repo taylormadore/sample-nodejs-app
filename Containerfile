@@ -1,4 +1,4 @@
-FROM docker.io/node:20
+FROM quay.io/tmadore/yarn-test:3.6.2
 
 COPY . /src
 WORKDIR /src
