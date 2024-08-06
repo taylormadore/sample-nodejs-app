@@ -1,4 +1,4 @@
-FROM docker.io/node:20
+FROM docker.io/node:22
 
 COPY . /src
 WORKDIR /src
